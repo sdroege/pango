@@ -39,3 +39,9 @@ gobject-sys = { git = "https://github.com/gtk-rs/sys" }
 
 [dev-dependencies]
 gir-format-check = "^0.1"
+
+[patch.'https://github.com/gtk-rs/glib']
+glib = { path = "../glib" }
+
+[patch.'https://github.com/gtk-rs/gio']
+gio = { path = "../gio" }
